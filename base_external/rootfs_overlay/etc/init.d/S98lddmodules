@@ -3,14 +3,18 @@
 case "$1" in 
     start)
         echo "LOADING MODULES LDD"
-        /usr/bin/scull_load
-        /usr/bin/module_load faulty
+        /usr/bin/scull_load && echo "Scull module loaded successfully" || echo "Failed to load scull module"
+        /usr/bin/module_load faulty && echo "Faulty module loaded successfully" || echo "Failed to load faulty module"
+        #/usr/bin/scull_load
+        #/usr/bin/module_load faulty
         modprobe hello
         ;;
     stop)
         echo "UNLOADING MODULES LDD"
-        /usr/bin/scull_unload
-        /usr/bin/module_unload faulty
+        /usr/bin/scull_unload && echo "Scull module unloaded successfully" || echo "Failed to unload scull module"
+        /usr/bin/module_unload faulty && echo "Faulty module unloaded successfully" || echo "Failed to unload faulty module"
+        #/usr/bin/scull_unload
+        #/usr/bin/module_unload faulty
         rmmod hello
         ;;
     *)
