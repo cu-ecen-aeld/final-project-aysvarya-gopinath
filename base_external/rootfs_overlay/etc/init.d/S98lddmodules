@@ -3,16 +3,16 @@
 case "$1" in 
     start)
         echo "LOADING MODULES LDD"
-        scull_load.sh && echo "Scull module loaded successfully" || echo "Failed to load scull module"
-        module_load.sh faulty && echo "Faulty module loaded successfully" || echo "Failed to load faulty module"
+        scull_load && echo "Scull module loaded successfully" || echo "Failed to load scull module"
+        module_load faulty && echo "Faulty module loaded successfully" || echo "Failed to load faulty module"
         #/usr/bin/scull_load
         #/usr/bin/module_load faulty
         modprobe hello
         ;;
     stop)
         echo "UNLOADING MODULES LDD"
-        scull_unload.sh && echo "Scull module unloaded successfully" || echo "Failed to unload scull module"
-        module_unload.sh faulty && echo "Faulty module unloaded successfully" || echo "Failed to unload faulty module"
+        scull_unload && echo "Scull module unloaded successfully" || echo "Failed to unload scull module"
+        module_unload faulty && echo "Faulty module unloaded successfully" || echo "Failed to unload faulty module"
         #/usr/bin/scull_unload
         #/usr/bin/module_unload faulty
         rmmod hello
