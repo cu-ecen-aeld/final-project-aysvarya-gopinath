@@ -6,8 +6,8 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION =491720838e98b9d62c08e61dea0707d452ba1db6 #commit hash pushing after aesdsocket script 
-#2853dcfa2261f7eda140095ea500214a2de8a680  #commit hash after finder-test.sh changes
+AESD_ASSIGNMENTS_VERSION =f7bda2c8570f587544d11c6971f0ece7a315cc1a  #commit hash after pushing char device
+#491720838e98b9d62c08e61dea0707d452ba1db6  #commit hash previous
 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.

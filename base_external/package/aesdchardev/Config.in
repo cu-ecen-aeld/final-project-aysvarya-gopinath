@@ -1,0 +1,11 @@
+config BR2_PACKAGE_AESDCHARDEV
+	bool "aesdchardev"
+	help
+	  Includes AESD character device in the kernel image.
+	  Used to understand buildroot external trees and package builds.
+	  
+	  
+	  
+	
+	  
+	  
