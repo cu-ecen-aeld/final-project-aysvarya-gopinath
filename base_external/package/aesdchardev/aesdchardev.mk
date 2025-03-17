@@ -3,7 +3,8 @@
  # aesdchardev
  ################################################################################
 
-AESDCHARDEV_VERSION =f7bda2c8570f587544d11c6971f0ece7a315cc1a
+AESDCHARDEV_VERSION =e0fa4e6667747ae64a648750ffecce52e44d0b7f
+#f7bda2c8570f587544d11c6971f0ece7a315cc1a
 
 AESDCHARDEV_SITE =git@github.com:cu-ecen-aeld/assignments-3-and-later-aysvarya-gopinath.git
 AESDCHARDEV_SITE_METHOD = git
