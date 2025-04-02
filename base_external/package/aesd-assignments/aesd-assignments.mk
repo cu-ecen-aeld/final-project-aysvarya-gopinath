@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION =f7bda2c8570f587544d11c6971f0ece7a315cc1a  #commit hash after pushing char device
+AESD_ASSIGNMENTS_VERSION =8ce0cc01e4ea3d9a1e4db29e2e1c4a5ea280fe10  #commit hash after pushing char device
 #491720838e98b9d62c08e61dea0707d452ba1db6  #commit hash previous
 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
