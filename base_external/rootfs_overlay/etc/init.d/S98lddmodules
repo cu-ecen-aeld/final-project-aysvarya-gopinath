@@ -3,19 +3,11 @@
 case "$1" in 
     start)
         echo "LOADING MODULES LDD"
-        scull_load && echo "Scull module loaded successfully" || echo "Failed to load scull module"
-        module_load faulty && echo "Faulty module loaded successfully" || echo "Failed to load faulty module"
-        modprobe hello
-        echo "LOADING AESD CHARACTER DEVICE"
-        aesdchar_load && echo "AESD character device loaded successfully" || echo "Failed to load AESD character device"
+        
         ;;
     stop)
         echo "UNLOADING MODULES LDD"
-        scull_unload && echo "Scull module unloaded successfully" || echo "Failed to unload scull module"
-        module_unload faulty && echo "Faulty module unloaded successfully" || echo "Failed to unload faulty module"
-        rmmod hello
-        echo "UNLOADING AESD CHARACTER DEVICE"
-        aesdchar_unload && echo "AESD character device unloaded successfully" || echo "Failed to unload AESD character device"
+        
         ;;
     *)
         echo "USAGE :$0 {start|stop}"
