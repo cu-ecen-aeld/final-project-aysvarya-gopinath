@@ -1,2 +1,4 @@
-name: project_base
-desc: external name 
+
+name: assignment_base
+description: Base customization for assignment
+
