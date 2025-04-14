@@ -1,0 +1,6 @@
+
+config BR2_PACKAGE_SYSTEM_MONITORING
+	bool "system monitoring"
+	help
+	  Includes the writer executable, tcp server and client in the kernel image.
+	 
