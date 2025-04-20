@@ -18,9 +18,9 @@ define SYSTEM_MONITORING_BUILD_CMDS
 endef
 
 define SYSTEM_MONITORING_INSTALL_TARGET_CMDS
-	#$(INSTALL) -m 0755 $(@D)/server/tcp_server.c $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0755 $(@D)/server/tcp_server.c $(TARGET_DIR)/usr/bin
 	$(INSTALL) -D -m 0755 $(@D)/server/tcp_server $(TARGET_DIR)/usr/bin/tcp_server
-	#$(INSTALL) -m 0755 $(@D)/server/Makefile $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0755 $(@D)/server/Makefile $(TARGET_DIR)/usr/bin
 	
 endef
 

@@ -1,0 +1,28 @@
+#https://dev.to/pfs/enabling-ethernet-support-and-openssh-on-raspberry-pi-5-with-buildroot-57dk
+
+# Loopback interface
+auto lo   #brings up the loopback interface at boot
+iface lo inet loopback
+
+# ethernet interface
+auto eth0
+iface eth0 inet dhcp   #uses DHCP to obtain IP
+    pre-up /etc/network/nfs_check   #runs the script
+    wait-delay 15                  
+    hostname $(hostname)       
+
+# Wireless interface 
+auto wlan0
+iface wlan0 inet dhcp  #dhcp client setup
+    pre-up wpa_supplicant -B -Dnl80211 -iwlan0 -c/etc/wpa_supplicant.conf  # Start WPA supplicant in the background
+    post-down killall -q wpa_supplicant
+    wait-delay 15
+iface default inet dhcp  #default interface
+
+
+
+
+
+
+
+

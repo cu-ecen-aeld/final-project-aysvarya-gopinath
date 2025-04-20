@@ -1,0 +1,35 @@
+#!/bin/sh
+
+
+#REFERENCES: https://blog.crysys.hu/2018/06/enabling-wifi-and-converting-the-raspberry-pi-into-a-wifi-ap/
+#https://dev.to/pfs/enabling-ethernet-support-and-openssh-on-raspberry-pi-5-with-buildroot-57dk
+#https://forums.raspberrypi.com/viewtopic.php?t=370905
+#https://github.com/buildroot/buildroot/blob/master/package/ifupdown-scripts/S40network
+
+# Start the network....
+#
+
+# Debian ifupdown needs the /run/network lock directory
+mkdir -p /run/network
+
+case "$1" in
+  start)
+	printf "Starting network: "
+	/sbin/ifup -a
+	[ $? = 0 ] && echo "OK" || echo "FAIL"
+	;;
+  stop)
+	printf "Stopping network: "
+	/sbin/ifdown -a
+	[ $? = 0 ] && echo "OK" || echo "FAIL"
+	;;
+  restart|reload)
+	"$0" stop
+	"$0" start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
