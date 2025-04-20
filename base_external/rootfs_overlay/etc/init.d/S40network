@@ -11,6 +11,7 @@
 
 # Debian ifupdown needs the /run/network lock directory
 mkdir -p /run/network
+modprobe brcmfmac
 
 case "$1" in
   start)
