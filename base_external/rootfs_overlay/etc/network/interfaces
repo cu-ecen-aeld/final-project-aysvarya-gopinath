@@ -19,5 +19,3 @@ iface wlan0 inet dhcp  #dhcp client setup
     wait-delay 15
 iface default inet dhcp  #default interface
 
-
-
