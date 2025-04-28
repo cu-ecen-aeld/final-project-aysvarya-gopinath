@@ -5,8 +5,8 @@
 #
 ##############################################################
  
-SYSTEM_MONITORING_VERSION = c42585a89fe34c624a7454e755bb1056bb005a29    #commit hash after pushing server/client code
-#c86d20b16e7bdbe198724f3ec1730c9c7f163a3e              #commit hash previous
+SYSTEM_MONITORING_VERSION = c8d49a8f9289fed551a65eeb325dd2b0c13be62c      #commit hash after pushing server/client code
+#f1401dc0e23da2edccd61808c45b4ceae8aeee31            #commit hash previous
  
 
 SYSTEM_MONITORING_SITE = git@github.com:aysvarya-gopinath/aesd_final_project.git
@@ -27,7 +27,7 @@ define SYSTEM_MONITORING_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/gpio/gpio_button.c $(TARGET_DIR)/usr/bin
 	$(INSTALL) -D -m 0755 $(@D)/gpio/gpio_button $(TARGET_DIR)/usr/bin/gpio_button		
 	$(INSTALL) -m 0755 $(@D)/gpio/gpio-start-stop.sh $(TARGET_DIR)/etc/init.d/S99gpio_button
-	#$(INSTALL) -m 0755 $(@D)/gpio/Makefile $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0755 $(@D)/gpio/Makefile $(TARGET_DIR)/usr/bin
 	
 	
 endef
