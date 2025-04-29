@@ -5,8 +5,8 @@
 #
 ##############################################################
  
-SYSTEM_MONITORING_VERSION = 0652ae3bb805d38a692fdfc30cb959e6d12ab5cb        #commit hash after pushing server/client code
-#30698e04f67104fd150092f11692bafb08e8e72a            #commit hash previous
+SYSTEM_MONITORING_VERSION = cec2a6f22bda364ff98c87b372136576fa9b61b2 0652ae3bb805d38a692fdfc30cb959e6d12ab5cb        #commit hash after pushing server/client code
+#0652ae3bb805d38a692fdfc30cb959e6d12ab5cb             #commit hash previous
  
 
 SYSTEM_MONITORING_SITE = git@github.com:aysvarya-gopinath/aesd_final_project.git
